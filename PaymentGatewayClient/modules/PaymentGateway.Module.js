@@ -1,0 +1,1 @@
+angular.module('PaymentGatewayModule', ['ngTouch', 'ngRoute', 'ngAnimate']);

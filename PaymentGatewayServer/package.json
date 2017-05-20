@@ -1,0 +1,23 @@
+{
+  "name": "payment_gateway",
+  "version": "1.0.0",
+  "description": "Cybrilla Technologies Payment Gateway",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "payment",
+    "gateway",
+    "online",
+    "payment"
+  ],
+  "author": "nayakashu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.7.1",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.15.2"
+  }
+}

@@ -1,0 +1,37 @@
+<div ng-init="init()">
+    <form>
+        <div class="form-group">
+            <label for="bank_ifsc_code">Bank IFSC Code</label>
+            <input type="text" class="form-control" id="bank_ifsc_code" placeholder="Enter Bank IFSC Code" name="bank_ifsc_code" ng-model="bank_ifsc_code">
+        </div>
+        <div class="form-group">
+            <label for="bank_account_number">Bank Account Number:</label>
+            <input type="text" class="form-control" id="bank_account_number" placeholder="Enter Bank Account Number" name="bank_account_number" ng-model="bank_account_number">
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="text" class="form-control" id="amount" placeholder="Enter Amount" name="amount" ng-model="amount">
+        </div>
+        <div class="form-group">
+            <label for="merchant_transaction_ref">Merchant Txn Ref:</label>
+            <input type="text" class="form-control" id="merchant_transaction_ref" placeholder="Enter Merchant Txn Ref" name="merchant_transaction_ref" ng-model="merchant_transaction_ref">
+        </div>
+        <div class="form-group">
+            <label for="transaction_date">Transaction Date:</label>
+            <input type="text" class="form-control" id="transaction_date" placeholder="Enter Transaction Date" name="transaction_date" ng-model="transaction_date">
+        </div>
+        <div class="form-group">
+            <label for="payment_gateway_merchant_reference">PG Merchant Txn Ref:</label>
+            <input type="text" class="form-control" id="payment_gateway_merchant_reference" placeholder="Enter PG Merchant Txn Ref" name="payment_gateway_merchant_reference" ng-model="payment_gateway_merchant_reference">
+        </div>
+        <button type="submit" class="btn btn-default" ng-click="submitTransactionAsString()">Submit as String</button>
+    </form>
+    
+    <br/>
+    <br/>
+
+    <div class="panel panel-primary" ng-if="responseFromServer !== null">
+      <div class="panel-heading">Response</div>
+      <div class="panel-body">{{ responseFromServer }}</div>
+    </div>
+</div>
